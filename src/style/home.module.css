@@ -1,0 +1,210 @@
+.home{
+    margin-top: 100px;
+}
+.banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url(../images/home-banner-ri.png);
+    width: 100vw;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 10%;
+    color: white;
+    line-height: 2.5em;
+}
+.bannerContent{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 35%;
+}
+.bannerContent>div{
+    background: linear-gradient(-137deg, #d81956 0%, #f84233 100%);
+}
+.bannerContent>div>h3{
+    background: linear-gradient(137deg, #11104d 0%, #060534 100%);
+    padding: 8px 10px;
+    margin-left: 5px;
+    font-weight: 400;
+}
+.bannerContent>h1{
+    font-size: 3em;
+    line-height: 1.2;
+}
+.bannerContent>h1>span,.WhyChoose h1>span,.divider,.contact_content h4{
+    background: linear-gradient(-137deg, #d81956 0%, #f84233 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.bannerContent a,.contact_button{
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(137deg, #11104d 0%, #060534 100%);
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    width: fit-content;
+}
+.contact_button{
+    background: linear-gradient(-137deg, #d81956 0%, #f84233 100%);
+}
+.bannerContent a>i,.contact_button>i{
+    background: rgb(255 255 255 / 50%);
+    padding: 10px;
+    border-radius: 5px;
+}
+.divider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.divider>hr{
+    height: 0px;
+    border: 2px solid black;
+    width: 50px;
+}
+.WhyChoose{
+    /* padding: 50px; */
+    margin: 50px 10%;
+}
+.WhyChooseHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.WhyChooseHeader h1{
+    font-size: 2.3em;
+    text-align: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 24%;
+    /* height: 367px; */
+    font-size: 1.2em;
+    box-shadow: 2px 5px 20px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    padding: 28px 15px;
+    text-wrap: wrap;
+    >i{
+        font-size: 2.5em;
+        color: #f84233;
+    }
+    >h3{
+        text-align: center;
+    }
+}
+.contact_button{
+    width: 170px;
+}
+.cardContainer{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.contact{
+    background: linear-gradient(to right,#93224B,#1E1E44);
+    color: white;
+    font-size: 1.1em;
+    display: grid;
+    grid-template-columns: 9fr 2fr;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+    min-height: 250px;
+}
+.contact_phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    gap: 15px;
+    font-size: 1.1em;
+    >i{
+        font-size: 2em;
+    }
+}
+.contact_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 80%; */
+    h4{
+        font-size: 1.3em;
+    }
+}
+.contact_content>i{
+    display: inline-block;
+    margin: 15px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(137deg, #11104d 0%, #060534 100%);
+    border-radius: 100px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+}
+.contact_body{
+    width: 50%;
+}
+
+@media screen and (max-width: 1405px) {
+    .card{
+        width: 40%;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .contact_content{
+        flex-direction: column;
+    }
+    .contact_phone{
+        width: 100%;
+        justify-content: left;
+    }
+    .contact_body{
+        width: 100%;
+    }
+    .contact_content>i{
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 1024px) {
+    .bannerContent{
+        width: fit-content;
+        font-size: 0.9em;
+    }  
+}
+@media screen and (max-width: 426px) {
+    .bannerContent{
+        font-size: 0.7em;
+    } 
+    .card{
+        width: 100%;
+    }
+    .contact{
+        grid-template-columns: 1fr;
+    }
+    
+}
+@media screen and (max-width: 344px) {
+    .bannerContent{
+        font-size: 0.6em;
+    }  
+    .contact{
+        font-size: 1em;
+    }
+}

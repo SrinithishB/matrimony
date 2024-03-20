@@ -1,0 +1,27 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vh;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    >hr{
+        border: 1px solid #1E1E44;
+        height:15px;
+    }
+    >a{
+        text-decoration: none;
+        color: #1E1E44;
+    }
+}
+.footer>p>a{
+    text-decoration: none;
+    color: #f84233;
+    font-weight: bold;
+}
