@@ -1,16 +1,17 @@
 import React from 'react'
 import css from '../style/footer.module.css'
+import { Link } from 'react-router-dom'
 function Footer() {
   return (
     <footer className={css.footer}>
         <div className={css.menu}>
-            <a href="#">About Us</a>
+            <Link to="/about">About Us</Link>
             <hr />
-            <a href="#">Terms & Conditions</a>
+            <Link to="/terms">Terms & Conditions</Link>
             <hr />
-            <a href="#">Privacy Policy</a>
+            <Link to="/privacy">Privacy Policy</Link>
             <hr />
-            <a href="#">Refund Policy</a>
+            <Link to="/refundpolicy">Refund Policy</Link>
         </div>
         <p>© 2024 <a href="#">SCA Marriage.</a> All rights Reserved</p>
     </footer>

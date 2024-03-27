@@ -1,0 +1,118 @@
+.about,.termsAndConditions,.privacyPolicy,.refundPolicy{
+    margin-top: 100px;
+}
+.banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../images/breadcrumb.jpg);
+    width: 100vw;
+    min-height: 10vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 10% 0% 10% 10%;
+    color: white;
+    font-size: 1.2em;
+}
+.bannerContent{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    >h1::before{
+        content: " ";
+        position: absolute;
+        background: linear-gradient(-137deg, #d81956 0%, #f84233 100%);
+        width: 5px;
+        height: 50px;
+        margin-left: -20px;
+    }
+    >div{
+        width: 50%;
+        background: linear-gradient(-137deg, #d81956 0%, #f84233 100%);
+        padding-right: 10%;
+        padding-left: 5%;
+        border-radius: 100px 0px 0px 100px;
+        display: flex;
+        align-items: center;
+        >a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+.AboutHeader,.Header{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.AboutHeader h1,.Header h1{
+    font-size: 2.3em;
+    text-align: center;
+}
+.divider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.divider>hr{
+    height: 0px;
+    border: 2px solid black;
+    width: 50px;
+}
+h1>span,.divider,.contact_content h4{
+    background: linear-gradient(-137deg, #d81956 0%, #f84233 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.content{
+    margin: 0% 10%;
+    padding: 25px;
+    line-height: 40px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 20px rgba(0, 0, 0, .2);
+    border-left: 5px solid #d81956 ;
+    border-image: linear-gradient(#d81956,#f84233) 30;
+}
+.content>ul{
+    padding: 15px;
+}
+@media screen and (max-width: 768px) {
+    .banner{
+        padding: 10%;
+        font-size: 1.1em;
+    }
+    .bannerContent{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 25px;
+        >h1{
+            border-image: linear-gradient(#d81956,#f84233) 30;
+            border-bottom-width: 5px;
+            border-top-width: 0px;
+            border-left-width:0px ;
+            border-right-width:0px ;
+            border-style: solid;
+            text-align: center;
+            width:  max-content;
+        }
+        >h1::before{
+            display: none;
+        }
+        >div{
+            width: fit-content;
+            background: linear-gradient(-137deg, #d81956 0%, #f84233 100%);
+            border-radius: 20px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 5px 30px;
+        }
+    }
+    
+}
